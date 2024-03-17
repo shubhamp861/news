@@ -1,0 +1,3 @@
+<div id="image-container" (wheel)="scrollToNextImage($event)" (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">
+    <div class="image" *ngFor="let image of images" [style.backgroundImage]="'url(' + image + ')'"></div>
+</div>
